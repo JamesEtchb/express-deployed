@@ -12,7 +12,6 @@ app.get('/dogs', getDogs)
 
 app.get('/test', testApi)
 
-// instead of app.listen(PORT)
-
+// instead of app.listen(PORT) . . .
 //we need to 1. create a cloud function, and 2. point it to 'app'
 export const api = functions.https.onRequest(app)
